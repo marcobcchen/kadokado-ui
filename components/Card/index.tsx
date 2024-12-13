@@ -1,8 +1,13 @@
 import React from "react";
-import { Box } from "theme-ui";
+import { Box, Flex } from "theme-ui";
 
 const Card = () => {
-  return <Box sx={{ background: "hotpink" }}>Card Box</Box>;
+  return (
+    <Flex p={3} sx={{ justifyContent: "space-between", background: "hotpink" }}>
+      <Box sx={{ background: "hotpink" }}>A</Box>
+      <Box sx={{ background: "hotpink" }}>B</Box>
+    </Flex>
+  );
 };
 
 export default Card;
